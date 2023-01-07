@@ -12,7 +12,7 @@ const About = () => {
     const [play] = useSound(hoverSound);
     const [projects, setProjects] = useState<any[]>([]);
     const getPinnedRepos = () => {
-      fetch("https://gh-pinned-repos.egoist.dev/?username=brandonsaldan")
+      fetch("https://gh-pinned-repos.egoist.dev/?username=uvacoder")
       .then((response) => response.json())
       .then((data) => setProjects(data))
       .catch((err) => console.log(err));
